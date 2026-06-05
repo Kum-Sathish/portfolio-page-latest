@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D Sathish Kumar | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for clean UI icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            bg: '#0a0a0c',
+                            surface: '#121216',
+                            accent: '#06b6d4', /* Cyan */
+                            textMuted: '#94a3b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0a0a0c;
+        }
+    </style>
+</head>
+<body class="text-gray-100 antialiased selection:bg-cyan-500 selection:text-black">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-brand-bg/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+                D. SATHISH <span class="text-brand-accent">KUMAR</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-textMuted">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contact" class="px-4 py-2 rounded-full border border-brand-accent/30 text-brand-accent hover:bg-brand-accent/10 transition">Let's Talk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <!-- Subtle Glow Effects -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-accent/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-4xl text-center z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-brand-surface text-xs font-medium tracking-wide text-brand-textMuted mb-6 animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-brand-accent"></span> Open for Engineering Opportunities
+            </div>
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-emerald-400">D Sathish Kumar</span>
+            </h1>
+            <p class="text-lg md:text-xl text-brand-textMuted max-w-2xl mx-auto mb-10 leading-relaxed">
+                Computer Science undergraduate engineering full-stack architectures and exploring intelligent systems. I turn complex database logic and elegant frontend layouts into high-performing digital realities.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-accent text-brand-bg font-semibold hover:bg-cyan-400 transition shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2">
+                    View My Work <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-brand-surface border border-white/10 text-white font-medium hover:bg-white/5 transition flex items-center justify-center gap-2">
+                    Contact Details <i data-lucide="mail" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EDUCATION SECTION -->
+    <section id="about" class="py-24 max-w-6xl mx-auto px-6 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-semibold mb-3">01 // Profile</h2>
+                <p class="text-3xl font-bold tracking-tight">About Me & Education</p>
+            </div>
+            <div class="md:col-span-2 space-y-8">
+                <p class="text-lg text-brand-textMuted leading-relaxed">
+                    I am deeply passionate about modern computer science architectures, data structures, and back-end integration. Alongside software engineering fundamentals, I consistently challenge myself by diving into artificial intelligence and emerging technologies to stay ahead of industry standards.
+                </p>
+                
+                <!-- Timeline Grid -->
+                <div class="space-y-6">
+                    <div class="p-6 rounded-2xl bg-brand-surface border border-white/5 relative">
+                        <span class="absolute top-6 right-6 px-3 py-1 rounded-md text-xs bg-brand-accent/10 text-brand-accent font-medium">2022 — 2026</span>
+                        <h4 class="text-lg font-bold">B.Tech in Computer Science and Engineering</h4>
+                        <p class="text-sm text-brand-textMuted mt-1">Andhra University College of Engineering, Visakhapatnam</p>
+                        <div class="mt-4 flex items-center gap-2 text-sm text-emerald-400 font-medium">
+                            <i data-lucide="award" class="w-4 h-4"></i> CGPA: 8.0 / 10[cite: 1]
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-surface border border-white/5 relative">
+                        <span class="absolute top-6 right-6 px-3 py-1 rounded-md text-xs bg-white/5 text-gray-400 font-medium">Completed 2021</span>
+                        <h4 class="text-lg font-bold">Class XII (CBSE)</h4>
+                        <p class="text-sm text-brand-textMuted mt-1">Vivekananda Kendra Vidyalaya[cite: 1]</p>
+                        <div class="mt-4 text-sm text-brand-textMuted">
+                            Score: <span class="text-white font-medium">78.8%</span>[cite: 1]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="py-24 bg-brand-surface/30 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-semibold mb-3">02 // Capabilities</h2>
+                <p class="text-3xl font-bold tracking-tight">Technical Architecture</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Box 1: Core Languages & Logic -->
+                <div class="p-8 rounded-2xl bg-brand-surface border border-white/5 hover:border-brand-accent/30 transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-accent/10 flex items-center justify-center text-brand-accent mb-6">
+                        <i data-lucide="code-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Languages & Systems</h3>
+                    <ul class="space-y-2 text-brand-textMuted text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span> Java (OOPs, Exception Handling, Collections)[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span> C programming[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span> Data Structures & Algorithms[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span> Operating Systems[cite: 1]</li>
+                    </ul>
+                </div>
+
+                <!-- Box 2: Full-Stack Technologies -->
+                <div class="p-8 rounded-2xl bg-brand-surface border border-white/5 hover:border-brand-accent/30 transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Web Ecosystem</h3>
+                    <ul class="space-y-2 text-brand-textMuted text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> HTML5, CSS3 & Modern JavaScript[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Responsive Web Design[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> JDBC & Spring Boot Basics[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> Tools: VS Code & GitHub[cite: 1]</li>
+                    </ul>
+                </div>
+
+                <!-- Box 3: Databases & Analytics -->
+                <div class="p-8 rounded-2xl bg-brand-surface border border-white/5 hover:border-brand-accent/30 transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 mb-6">
+                        <i data-lucide="database" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Database Management</h3>
+                    <ul class="space-y-2 text-brand-textMuted text-sm">
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> MySQL Database Management[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Complex SQL Queries & Optimization[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> Secure Database Connectivity[cite: 1]</li>
+                        <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> DBMS Fundamentals[cite: 1]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-24 max-w-6xl mx-auto px-6 border-t border-white/5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-semibold mb-3">03 // Internships</h2>
+                <p class="text-3xl font-bold tracking-tight">Professional History</p>
+            </div>
+            <div class="md:col-span-2 space-y-12">
+                <div class="relative pl-8 border-l-2 border-white/5">
+                    <!-- Timeline Node -->
+                    <div class="absolute w-4 h-4 bg-brand-accent rounded-full -left-[9px] top-1.5 border-4 border-brand-bg"></div>
+                    
+                    <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+                        <h3 class="text-xl font-bold text-white">Web Development Intern</h3>
+                        <span class="text-sm bg-brand-surface px-3 py-1 rounded-full text-brand-textMuted border border-white/5">Mar 2024 — Aug 2024</span>
+                    </div>
+                    <p class="text-sm text-brand-accent font-medium mb-4">I&T Labs</p>
+                    <ul class="space-y-3 text-brand-textMuted text-sm list-disc pl-4">
+                        <li>Engineered fluid, responsive web systems using HTML, CSS, JavaScript, PHP, and MySQL[cite: 1].</li>
+                        <li>Successfully navigated full-stack environments optimizing complex frontend-backend workflow integration[cite: 1].</li>
+                        <li>Designed and validated robust relational SQL database structures to power application endpoints smoothly[cite: 1].</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-24 bg-brand-surface/30 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-brand-accent font-semibold mb-3">04 // Creations</h2>
+                <p class="text-3xl font-bold tracking-tight">Featured Engineering Projects</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative rounded-2xl bg-brand-surface border border-white/5 overflow-hidden hover:border-white/10 transition">
+                    <div class="p-8">
+                        <span class="text-xs text-brand-accent uppercase font-semibold tracking-wider">Web Application Architecture</span>
+                        <h3 class="text-2xl font-bold text-white mt-2 mb-4">Registration Form Application</h3>
+                        <p class="text-brand-textMuted text-sm mb-6 leading-relaxed">
+                            A production-ready responsive registration pipeline fully reinforced with deep client-side logic validation and scalable relational SQL database mapping[cite: 1].
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-2.5 py-1 rounded bg-white/5 text-xs text-gray-300">HTML5 / CSS3</span>
+                            <span class="px-2.5 py-1 rounded bg-white/5 text-xs text-gray-300">JavaScript</span>
+                            <span class="px-2.5 py-1 rounded bg-white/5 text-xs text-gray-300">MySQL Database</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative rounded-2xl bg-brand-surface border border-white/5 overflow-hidden hover:border-white/10 transition">
+                    <div class="p-8">
+                        <span class="text-xs text-brand-accent uppercase font-semibold tracking-wider">Creative Frontend Engineering</span>
+                        <h3 class="text-2xl font-bold text-white mt-2 mb-4">Personal Portfolio Framework</h3>
+                        <p class="text-brand-textMuted text-sm mb-6 leading-relaxed">
+                            A fast, highly aesthetic personal digital footprint tailored strategically to exhibit projects, milestones, academic metrics, and modern web paradigms clean and elegantly[cite: 1].
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-2.5 py-1 rounded bg-white/5 text-xs text-gray-300">HTML5</span>
+                            <span class="px-2.5 py-1 rounded bg-white/5 text-xs text-gray-300">Tailwind CSS</span>
+                            <span class="px-2.5 py-1 rounded bg-white/5 text-xs text-gray-300">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXTRA-CURRICULARS / LEADERSHIP BENTO BOXES -->
+    <section class="py-24 max-w-6xl mx-auto px-6 border-t border-white/5">
+        <div class="mb-16 text-center md:text-left">
+            <h2 class="text-xs uppercase tracking-widest text-brand-accent font-semibold mb-3">05 // Leadership & Core Value</h2>
+            <p class="text-3xl font-bold tracking-tight">Beyond the Code</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-brand-surface border border-white/5 flex flex-col justify-between">
+                <div>
+                    <i data-lucide="users" class="w-6 h-6 text-brand-accent mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Class Representative Roles</h4>
+                    <p class="text-sm text-brand-textMuted">Proved robust capabilities in high-stakes environment coordination, cross-functional organization communication, and seamless human team resource management[cite: 1].</p>
+                </div>
+            </div>
+            <div class="p-6 rounded-2xl bg-brand-surface border border-white/5 flex flex-col justify-between">
+                <div>
+                    <i data-lucide="party-popper" class="w-6 h-6 text-emerald-400 mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">AAA Annual Meetup Coordinator</h4>
+                    <p class="text-sm text-brand-textMuted">Active Student Ambassador Club Member executing flawless event pipeline workflows during WAVES 2024 annual meetup[cite: 1].</p>
+                </div>
+            </div>
+            <div class="p-6 rounded-2xl bg-brand-surface border border-white/5 flex flex-col justify-between">
+                <div>
+                    <i data-lucide="zap" class="w-6 h-6 text-amber-400 mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Agility & Competitiveness</h4>
+                    <p class="text-sm text-brand-textMuted">State and inter-school level strategic Badminton player bringing fast split-second problem-solving and focus directly into software sprints[cite: 1].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-brand-surface border-t border-white/10 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-xs uppercase tracking-widest text-brand-accent font-semibold mb-4">06 // Connect</h2>
+            <p class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">Let's Discuss Opportunities</p>
+            <p class="text-brand-textMuted max-w-xl mx-auto mb-12">
+                Whether you need a dedicated software engineering intern, a versatile back-end engineer, or an agile problem-solver to scale your apps, my lines are always open[cite: 1].
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto text-sm">
+                <a href="mailto:kumardsathish84@gmail.com" class="p-4 rounded-xl bg-brand-bg border border-white/5 hover:border-brand-accent/40 transition flex flex-col items-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5 text-brand-accent"></i>
+                    <span class="text-gray-400">kumardsathish84@gmail.com</span>
+                </a>
+                <a href="tel:+918900935183" class="p-4 rounded-xl bg-brand-bg border border-white/5 hover:border-brand-accent/40 transition flex flex-col items-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5 text-brand-accent"></i>
+                    <span class="text-gray-400">+91-8900935183</span>
+                </a>
+                <a href="https://linkedin.com/in/d-sathish-kumar" target="_blank" class="p-4 rounded-xl bg-brand-bg border border-white/5 hover:border-brand-accent/40 transition flex flex-col items-center gap-2">
+                    <i data-lucide="linkedin" class="w-5 h-5 text-brand-accent"></i>
+                    <span class="text-gray-400">linkedin.com/in/d-sathish-kumar</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center text-xs text-brand-textMuted border-t border-white/5">
+        <p>© 2026 D Sathish Kumar. Built for seamless scale and performance.</p>
+    </footer>
+
+    <!-- Initialize Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
